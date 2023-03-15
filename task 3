@@ -1,0 +1,20 @@
+from mysql.connector import *
+con=connect(host="localhost",user="root",password="",database="bookstore")
+cur=con.cursor()
+
+
+
+
+print("search by title  t, by category  c,by author name  a, by secton  s:")
+ch=input()
+if("ch==t"):
+    print("the dreamland   d","india i","the diary  da")
+    t=input()
+    if(t=="d"):
+        print("title name is: dreamland   author name is:  apj    category is :science fiction            section is:science")
+    elif(t=="i"):
+        print("title name is:india   author name is:  rjp    category is:divide and rule    section is:fiction")
+    elif(t=="da"):
+        print("title name is: dairy   author name is:  anna    category is:romance   sectionis:mistery")
+
+
